@@ -142,7 +142,10 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-
+/* Show menu */
+.show-menu{
+  top: calc(var(--header-height) + 1rem);
+}
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
@@ -159,6 +162,9 @@ img {
     border-radius: 2rem;
     z-index: var(--z-fixed);
   }
+}
+.active-link{
+  background: var(--first-color-alt);
 }
 
 .nav__item {
