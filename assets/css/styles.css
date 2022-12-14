@@ -348,7 +348,7 @@ textarea {
   padding: 1rem 0;
   font-size: 1rem;
   color: var(--container-color);
-  /* margin-bottom: 3rem; */
+  margin-bottom: 2rem;
 }
 .text__area {
   width: 100%;
@@ -516,7 +516,9 @@ textarea {
   .about__img {
     width: 469px;
   }
-
+  .contact__content {
+    margin-bottom: 11rem;
+  }
   .home__container,
   .about__container,
   .contact__container {
@@ -525,4 +527,5 @@ textarea {
   .form__content {
     width: 320px;
   }
+
 }
