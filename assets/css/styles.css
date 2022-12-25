@@ -333,6 +333,14 @@ textarea {
   width: 280px;
   justify-self: center;
 }
+#contact-error{
+  color: var(--first-color-alt);
+  display: inline-block;
+  padding: 1rem 0.5rem;
+  border-radius: .5rem;
+  width: max-content;
+  font-size: var(--normal-font-size);
+}
 .form__content {
   width: 270px;
 }
@@ -398,6 +406,14 @@ textarea {
 }
 .icon__link:nth-child(3){
   color: #2388e7;
+}
+
+/* Footer */
+.footer{
+  text-align: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-top: 4rem;
 }
 /*========== MEDIA QUERIES ==========*/
 

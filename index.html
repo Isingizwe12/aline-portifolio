@@ -9,28 +9,6 @@
     <!-- Icons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <script>
- function validateForm(){
-    var n=document.forms["myForm"]["myName"].value;
-    var e=document.forms["myForm"]["myEmail"].value;
-    var t=document.forms["myForm"]["myText"].value;
-    if(n=="")
-    {
-        alert("Please enter your names!");
-    }
-    else if(e=="")
-    {
-        alert("Please Enter your Email!");
-    }
-    else if(t=="")
-    {
-        alert(" Please Enter your message!");
-        return false
-    }
-
- }
-
-    </script>
 </head>
 
 <body>
@@ -140,9 +118,7 @@
             <div class="contact__container bd-grid">
                 <div class="contact__content">
                     <p class="contact__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam eum
-                        quibusdam veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Magnam autem ut atque quaerat harum ab nulla nesciunt earum quod doloremque illo
-                         inventore facere, ducimus distinctio minima voluptatem, perspiciatis rerum hic.</p>
+                        quibusdam veniam?</p>
                     <!-- Social media I cons -->
                     <div class="social__media">
                         <a href="#" class="icon__link"> <i class='bx bxl-facebook-circle'></i></a>
@@ -151,13 +127,14 @@
                     </div>
                 </div>
 
-                <div class="contact__form">
-                    <form action="#" class="form__content" onsubmit="return validateForm()" method="post" name="myForm">
-                        <input type="text" placeholder="Your names" class="form__input mb" name="myName">
+                <div class="contact__form" id="form-container">
+                    <div id="contact-error"></div>
+                    <form action="#" class="form__content" onsubmit="return contactFormValidation()" id="contact-form" data-netlify="true" name=" sign-in" value="sign-in">
+                        <input type="hidden" name="sign-in" value="sign-in">
+                        <input type="text" placeholder="Your names" class="form__input mb" id="contact-names">
 
-                        <input type="email" placeholder="E-mail" class="form__input mb" name="myEmail">
-
-                        <textarea name="myText" id="" cols="30" rows="10" placeholder="Message" class="text__area mb" ></textarea>
+                        <input type="text" placeholder="E-mail" class="form__input mb" id="contact-email">
+                        <textarea name="msg" placeholder="Message" class="text__area mb" id="contact-msg"></textarea>
 
                         <button type="submit" class="form__button">Send</button>
                     </form>
@@ -165,6 +142,11 @@
             </div>
         </section>
     </main>
+    <!--========== FOOTER ==========-->
+    <footer class="footer bd-container section">
+        <hr>
+        <p>&#169; 2022 ISINGIZWE ALINE. All right reserved</p>
+    </footer>
     <script src="./assets/js/script.js" difer></script>
 </body>
 
